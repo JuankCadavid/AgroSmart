@@ -1,4 +1,252 @@
 <app-navigation></app-navigation>
-<p>
-  start works!
-</p>
+<div class="d-flex toggled" id="wrapper">
+  <div class="container-fluid">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-xl-3 col-md-4 mb-2">
+          <div class="card border-left shadow h-100 py-2" (mouseover)="projec=true" (mouseleave)="projec=false"
+            style="border-radius: 15px">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="h5 font-weight-bold text-uppercase text-center mb-1"
+                    [ngStyle]="{color:projec==true ? 'rgb(32, 151, 91)' : '#2256a0'}">
+                    <strong>PROJECTS</strong>
+                  </div>
+                  <hr>
+                  <img src="../../../assets/ISO3.png" style="widows: 180px;height:160px" class="card-img-top">
+                  <hr>
+                  <div class="h4 mb-0 font-weight-bold text-gray-800">
+                    <button class="btn btn-info btn-block" routerLink="/proyectos" routerLinkActive="active">GO
+                      !</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-4 mb-2">
+          <div class="card border-left shadow h-100 py-2" (mouseover)="hover=true" (mouseleave)="hover=false"
+            style="border-radius: 15px">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="h5 font-weight-bold text-uppercase text-center mb-1"
+                    [ngStyle]="{color:hover==true ? 'rgb(32, 151, 91)' : '#2256a0'}">
+                    <strong>STATISTICS</strong>
+                  </div>
+                  <hr>
+                  <img [src]="hover==true ? '../../../assets/estadisticas.gif' : '../../../assets/statistics2.png'"
+                    style="widows: 180px;height:160px" class="card-img-top">
+                  <hr>
+                  <div class="h4 mb-0 font-weight-bold text-gray-800">
+                    <button class="btn btn-info btn-block">GO
+                      !</button> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-4 mb-2">
+          <div class="card border-left shadow h-100 py-2" (mouseover)="summary=true" (mouseleave)="summary=false"
+            style="border-radius: 15px">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="h5 font-weight-bold text-uppercase text-center mb-1"
+                    [ngStyle]="{color:summary==true ? 'rgb(32, 151, 91)' : '#2256a0'}">
+                    <strong>ISO20000</strong>
+                  </div>
+                  <hr>
+                  <img src="../../../assets/IOS2.png" style="widows: 180px;height:160px" class="card-img-top">
+                  <hr>
+                  <div class="h4 mb-0 font-weight-bold text-gray-800">
+                    <button class="btn btn-info btn-block">GO
+                      !</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-4 mb-2">
+          <div class="card border-left shadow h-100 py-2" (mouseover)="documentation=true"
+            (mouseleave)="documentation=false" style="border-radius: 15px">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="h5 font-weight-bold text-uppercase text-center mb-1"
+                    [ngStyle]="{color:documentation==true ? 'rgb(32, 151, 91)' : '#2256a0'}">
+                    <strong>DOCUMENTS</strong>
+                  </div>
+                  <hr>
+                  <img src="../../../assets/documentos-png-6.png" style="widows: 180px;height:160px"
+                    class="card-img-top">
+                  <hr>
+                  <div class="h4 mb-0 font-weight-bold text-gray-800">
+                    <button class="btn btn-info btn-block" role="link"
+                      onclick="window.open('https://psmtonedrive.sharepoint.com/sites/POSTeamSite/Base%20of%20knowledge/Forms/AllItems.aspx','_blank')">GO
+                      !</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid">
+      <div class="container">
+        <h1 class="mt-4 text-center font-weight-bold" style="font-size:60px;color:rgb(32, 151, 91) ">About Us
+        </h1>
+        <div class="container">
+          <p class="text-center font-weight" style="font-size:20px">We are the team in charge of
+            managing the point-of-sale system of each of
+            the PriceSmart clubs in
+            Central America, the Caribbean, and South America.
+            At present we have a group of 14 people distributed in the United States, Guatemala, and
+            Colombia.
+            Each member of the team complies with specific tasks to ensure the proper functioning of
+            the
+            system
+            and to support the requirements of each country, offering tailored solutions and seeking
+            to
+            be
+            at
+            the forefront in order to contribute to the improvement of the service we offer to our
+            members.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-5" style="background-color:#f9f8f8">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-11">
+          <div class="card shadow py-2 mb-2">
+            <div class="card-body">
+              <h3 class="mt-4 text-center font-weight-bold" style="font-size:50px;color:#2256a0">Retail
+              </h3>
+              <div class="container">
+                  <p class="text-center font-weight" style="font-size:20px">We are the team in charge of
+                    managing the point-of-sale system of each of
+                    the PriceSmart clubs in
+                    Central America, the Caribbean, and South America.
+                    At present we have a group of 14 people distributed in the United States, Guatemala, and
+                    Colombia.
+                    Each member of the team complies with specific tasks to ensure the proper functioning of
+                    the
+                    system
+                    and to support the requirements of each country, offering tailored solutions and seeking
+                    to
+                    be
+                    at
+                    the forefront in order to contribute to the improvement of the service we offer to our
+                    members.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-11">
+          <img src="../../../assets/retail.gif" alt="">
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+  
+          <div class="col-xl-5 col-lg-11">
+            <img src="../../../assets/Drone.gif" alt="">
+  
+          </div>
+          <div class="col-xl-5 col-lg-11">
+              <div class="card shadow py-2 mb-2">
+                <div class="card-body">
+                  <h3 class="mt-4 text-center font-weight-bold" style="font-size:50px;color:rgb(31, 138, 84)">Solutions
+                  </h3>
+                  <div class="container">
+                      <p class="text-center font-weight" style="font-size:20px">We are the team in charge of
+                        managing the point-of-sale system of each of
+                        the PriceSmart clubs in
+                        Central America, the Caribbean, and South America.
+                        At present we have a group of 14 people distributed in the United States, Guatemala, and
+                        Colombia.
+                        Each member of the team complies with specific tasks to ensure the proper functioning of
+                        the
+                        system
+                        and to support the requirements of each country, offering tailored solutions and seeking
+                        to
+                        be
+                        at
+                        the forefront in order to contribute to the improvement of the service we offer to our
+                        members.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <br>
+  <ng-template #tickets let-modal>
+    <div class="modal-content" style="background:rgba(0,0,0,0.8);">
+      <div class="modal-header" style="background:rgba(255,255,255,0.5);">
+        <h4 class="modal-title text-white" id="modal-basic-title">ITIL</h4>
+      </div>
+      <div class="modal-body" style="background:rgba(0, 0, 0,0.3);">
+        <form>
+
+          <div class="row">
+            <div class="col-xl-4 col-md-1 mb-1">
+              <div class="h4 mb-0 font-weight-bold text-gray-800">
+                <button class="btn btn-block" (click)="modal.close()" routerLink="/iso" routerLinkActive="active"
+                  style="height: 134px;width: 134px;border-radius: 15px;background-color: white">
+                  <img [src]="'../../../assets/ISO1.png'" style="widows: 110px;height:100px" class="card-img-top">
+                </button>
+                <h5 class="text-center text-white py-2">New Ticket</h5>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-1 mb-1">
+              <div class="h4 mb-0 font-weight-bold text-gray-800">
+                <button class="btn btn-block" (click)="modal.close()" routerLink="/iso/list" routerLinkActive="active"
+                  style="height: 134px;width: 134px;border-radius: 15px;background-color: white">
+                  <img [src]="'../../../assets/IOS2.png'" style="widows: 110px;height:100px" class="card-img-top">
+                </button>
+                <h5 class="text-center text-white py-2">My Tickets</h5>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-1 mb-1">
+              <div class="h4 mb-0 font-weight-bold text-gray-800">
+                <button class="btn btn-block" (click)="modal.close()" routerLink="/iso" routerLinkActive="active"
+                  style="height: 134px;width: 134px;border-radius: 15px;background-color: white">
+                  <img [src]="'../../../assets/statistics2.png'" style="widows: 110px;height:100px"
+                    class="card-img-top">
+                </button>
+                <h5 class="text-center text-white py-2">My Statistics</h5>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </ng-template>
+</div>
+<footer class="sticky-footer background-color" style="background-color:#3a3b42;">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto text-white">
+      <span>By <Strong>A</Strong>groSmart Team</span>
+    </div>
+  </div>
+</footer>

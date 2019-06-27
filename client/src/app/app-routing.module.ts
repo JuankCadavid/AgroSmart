@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { NavigationComponent} from './components/navigation/navigation.component'
 import { StartComponent } from './components/start/start.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 
 const routes: Routes = [
@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path:'start',
     component:StartComponent
+  },
+  {
+    path:'inicio',
+    component:InicioComponent
   }
 
 ];

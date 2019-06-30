@@ -9,13 +9,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/inicio" routerLinkActive="active">
+                  Inicio</a>
+              </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/Team" routerLinkActive="active">
+            <a class="nav-link" routerLink="/equipo" routerLinkActive="active">
               Equipo</a>
           </li>
           <li class="nav-item">
-                <a class="nav-link" routerLink="/start" routerLinkActive="active"  value="start" >
-                  English Version</a>
+                <a class="nav-link" routerLink="/" routerLinkActive="active"  value="start" (click)=getCurrentRoute()>
+                  Versión en Inglés</a>
             </li>
         </ul>
       </div>

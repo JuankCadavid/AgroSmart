@@ -10,11 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Team" routerLinkActive="active">
+            <a class="nav-link" routerLink="/start" routerLinkActive="active">
+              Home</a>
+          </li>
+          <li>
+          <a class="nav-link" routerLink="/team" routerLinkActive="active">
             Team</a>
         </li>
-        <li class="nav-item">
-              <a class="nav-link" routerLink="/inicio" routerLinkActive="active"  value="start" >
+
+          <li class="nav-item">
+              <a #rutas class="nav-link" routerLink="/" routerLinkActive="active"  value="start" (click)=getCurrentRoute() >
                 Spanish Version</a>
           </li>
       </ul>

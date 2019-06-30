@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { StartComponent } from './components/start/start.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { TeamComponent } from 'src/app/components/team/team.component';
+import { EquipoComponent } from 'src/app/components/equipo/equipo.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,16 @@ const routes: Routes = [
   {
     path:'inicio',
     component:InicioComponent
+  },
+  {
+    path:'team',
+    component:TeamComponent
+  },
+  {
+    path:'equipo',
+    component:EquipoComponent
   }
+
 
 ];
 

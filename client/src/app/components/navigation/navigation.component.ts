@@ -23,20 +23,14 @@ export class NavigationComponent implements OnInit {
       }
       else if (myroute == 'start') {
         this.router.navigateByUrl("/inicio");
+      } else if (myroute == 'statistics') {
+        this.router.navigateByUrl("/estadisticas");
       }
       else {
         this.router.navigateByUrl("/start");
       }
 
-      if (myroute == 'statistics') {
-        this.router.navigateByUrl("/estadisticas");
-      }
-      else if (myroute == 'start') {
-        this.router.navigateByUrl("/inicio");
-      }
-      else {
-        this.router.navigateByUrl("/start");
-      }
+
     });
 
   }

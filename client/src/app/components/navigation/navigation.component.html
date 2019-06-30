@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark"style="background:rgba(32, 151, 91,0.8);">
   <div class="container-fluid" >
     <a class="navbar-brand" [routerLink]="['/start']">
-      <h3><img src="./assets/AS.ico" style="max-height:45px;max-width: 45px;"><strong> A</strong>groSmart Co</h3>
+      <h3><img src="./assets/drone3.png" style="max-height:45px;max-width: 45px;"><strong> A</strong>groSmart Co</h3>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,11 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Team" routerLinkActive="active">
+            <a class="nav-link" routerLink="/start" routerLinkActive="active">
+              Home</a>
+          </li>
+          <li>
+          <a class="nav-link" routerLink="/team" routerLinkActive="active">
             Team</a>
         </li>
-        <li class="nav-item">
-              <a class="nav-link" routerLink="/inicio" routerLinkActive="active"  value="start" >
+
+          <li class="nav-item">
+              <a #rutas class="nav-link" routerLink="/" routerLinkActive="active"  value="start" (click)=getCurrentRoute() >
                 Spanish Version</a>
           </li>
       </ul>

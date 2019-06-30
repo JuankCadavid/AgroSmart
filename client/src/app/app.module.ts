@@ -8,6 +8,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { StartComponent } from './components/start/start.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
+import { TeamComponent } from './components/team/team.component';
+import { EquipoComponent } from './components/equipo/equipo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NavegacionComponent } from './components/navegacion/navegacion.componen
     NavigationComponent,
     StartComponent,
     InicioComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    TeamComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,

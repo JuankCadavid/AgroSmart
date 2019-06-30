@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute} from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-navigation',
@@ -9,26 +9,36 @@ import { Router, ActivatedRoute} from "@angular/router";
 export class NavigationComponent implements OnInit {
 
   constructor(private router: Router,
-              private ar: ActivatedRoute) {}
+    private ar: ActivatedRoute) { }
 
   ngOnInit() {
   }
 
-   getCurrentRoute(){
+  getCurrentRoute() {
 
-    this.ar.url.subscribe(prueba =>{
+    this.ar.url.subscribe(prueba => {
       const myroute = prueba[0].path;
-      if(myroute == 'team'){
+      if (myroute == 'team') {
         this.router.navigateByUrl("/equipo");
       }
-      else if(myroute == 'start'){
+      else if (myroute == 'start') {
         this.router.navigateByUrl("/inicio");
       }
-      else{
+      else {
+        this.router.navigateByUrl("/start");
+      }
+
+      if (myroute == 'statistics') {
+        this.router.navigateByUrl("/estadisticas");
+      }
+      else if (myroute == 'start') {
+        this.router.navigateByUrl("/inicio");
+      }
+      else {
         this.router.navigateByUrl("/start");
       }
     });
-   
+
   }
 
 }

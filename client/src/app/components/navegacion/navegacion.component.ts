@@ -28,6 +28,16 @@ export class NavegacionComponent implements OnInit {
       else{
         this.router.navigateByUrl("/inicio");
       }
+
+      if(myroute == 'estadisticas'){
+        this.router.navigateByUrl("/statistics");
+      }
+      else if(myroute == 'inicio'){
+        this.router.navigateByUrl("/start");
+      }
+      else{
+        this.router.navigateByUrl("/inicio");
+      }
     });
    
   }

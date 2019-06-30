@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark"style="background:rgba(32, 151, 91,0.8);">
-  <div class="container-fluid" >
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background:rgba(32, 151, 91,0.8);">
+  <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/start']">
       <h4><img src="./assets/drone3.png" style="max-height:40px;max-width: 40px;"><strong> A</strong>groSmart Co</h4>
     </a>
@@ -10,18 +10,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" routerLink="/start" routerLinkActive="active">
-              Home</a>
-          </li>
-          <li>
+          <a class="nav-link" routerLink="/start" routerLinkActive="active">
+            Home</a>
+        </li>
+        <li>
           <a class="nav-link" routerLink="/team" routerLinkActive="active">
             Team</a>
         </li>
 
-          <li class="nav-item">
-              <a #rutas class="nav-link" routerLink="/" routerLinkActive="active"  value="start" (click)=getCurrentRoute() >
-                Spanish Version</a>
-          </li>
+        <li class="nav-item">
+          <a #rutas class="nav-link" routerLink="/" routerLinkActive="active" value="start" (click)=getCurrentRoute()>
+            Spanish Version</a>
+        </li>
       </ul>
     </div>
   </div>

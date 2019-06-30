@@ -10,6 +10,9 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 import { TeamComponent } from './components/team/team.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { EquipoComponent } from './components/equipo/equipo.component';
     InicioComponent,
     NavegacionComponent,
     TeamComponent,
-    EquipoComponent
+    EquipoComponent,
+    StatisticsComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,

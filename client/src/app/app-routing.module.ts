@@ -1,45 +1,54 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { StartComponent } from './components/start/start.component';
-import { InicioComponent } from './components/inicio/inicio.component';
-import { TeamComponent } from 'src/app/components/team/team.component';
-import { EquipoComponent } from 'src/app/components/equipo/equipo.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
-import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { StartComponent } from './components/English/start/start.component';
+import { InicioComponent } from './components/Spanish/inicio/inicio.component';
+import { TeamComponent } from './components/English/team/team.component';
+import { EquipoComponent } from './components/Spanish/equipo/equipo.component';
+import { StatisticsComponent } from './components/English/statistics/statistics.component';
+import { EstadisticasComponent } from './components/Spanish/estadisticas/estadisticas.component';
+import { DocumentationComponent } from './components/documentation/documentation.component';
+import { BooksComponent } from './components/documentation/books/books.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/start',
+    redirectTo: '/English/start',
     pathMatch: 'full'
   },
   {
-    path:'start',
-    component:StartComponent
+    path: 'English/start',
+    component: StartComponent
   },
   {
-    path:'inicio',
-    component:InicioComponent
+    path: 'Spanish/inicio',
+    component: InicioComponent
   },
   {
-    path:'team',
-    component:TeamComponent
+    path: 'English/team',
+    component: TeamComponent
   },
   {
-    path:'equipo',
-    component:EquipoComponent
+    path: 'Spanish/equipo',
+    component: EquipoComponent
   },
   {
-    path:'statistics',
-    component:StatisticsComponent
+    path: 'English/statistics',
+    component: StatisticsComponent
   },
   {
-    path:'estadisticas',
-    component:EstadisticasComponent
+    path: 'Spanish/estadisticas',
+    component: EstadisticasComponent
+  },
+  {
+    path: 'English/documentation',
+    component: DocumentationComponent
+  },
+  {
+    path: 'books',
+    component: BooksComponent
   }
-
 
 ];
 

@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { StartComponent } from './components/start/start.component';
-import { InicioComponent } from './components/inicio/inicio.component';
-import { NavegacionComponent } from './components/navegacion/navegacion.component';
-import { TeamComponent } from './components/team/team.component';
-import { EquipoComponent } from './components/equipo/equipo.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
-import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { NavigationComponent } from './components/English/navigation/navigation.component';
+import { NavegacionComponent } from './components/Spanish/navegacion/navegacion.component';
+import { StartComponent } from './components/English/start/start.component';
+import { InicioComponent } from './components/Spanish/inicio/inicio.component';
+import  { TeamComponent} from './components/English/team/team.component';
+import { EquipoComponent } from './components/Spanish/equipo/equipo.component'; 
+import { StatisticsComponent } from './components/English/statistics/statistics.component';
+import { EstadisticasComponent } from './components/Spanish/estadisticas/estadisticas.component';
+import { DocumentationComponent } from './components/documentation/documentation.component';
 
+
+import {SidebarModule} from 'primeng/sidebar';
+import {MenuModule} from 'primeng/menu';
+import { BooksComponent } from './components/documentation/books/books.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +30,18 @@ import { EstadisticasComponent } from './components/estadisticas/estadisticas.co
     TeamComponent,
     EquipoComponent,
     StatisticsComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    DocumentationComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    SidebarModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,79 @@
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.image_book {
+    max-width: 70%;
+    height: auto;
+}
+
+#toc_container {
+    margin: 0;
+    padding: 0;
+    background: #FFF none repeat scroll 0 0;
+    border-left: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+    float: right;
+    position: fixed;
+    display: block;
+    overflow: auto;
+    right: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1;
+    color: #212529;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li {
+    list-style: outside none none !important;
+}
+
+.sidebarR {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #FFF;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    right: 0;
+}
+
+.sidebarR a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebarR a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebarR a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .sidebarR a {
+        float: none;
+        display: none !important;
+    }
+    #toc_container a {
+        display: none !important;
+    }
+}

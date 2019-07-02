@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-books',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+    private ar: ActivatedRoute) { }
 
   ngOnInit() {
   }

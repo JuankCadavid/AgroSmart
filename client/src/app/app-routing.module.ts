@@ -9,6 +9,7 @@ import { StatisticsComponent } from './components/English/statistics/statistics.
 import { EstadisticasComponent } from './components/Spanish/estadisticas/estadisticas.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BooksComponent } from './components/documentation/books/books.component';
+import { PresentationComponent } from './components/documentation/presentation/presentation.component';
 
 
 const routes: Routes = [
@@ -43,12 +44,19 @@ const routes: Routes = [
   },
   {
     path: 'English/documentation',
-    component: DocumentationComponent
+    component: DocumentationComponent,
+    children:[
+      {
+        path: 'presentation',
+        component: PresentationComponent
+      },
+      {
+        path: 'books',
+        component: BooksComponent
+      }
+    ]
   },
-  {
-    path: 'books',
-    component: BooksComponent
-  }
+
 
 ];
 
@@ -57,7 +65,10 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    })
   ],
   exports: [RouterModule]
 })

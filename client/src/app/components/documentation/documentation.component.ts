@@ -18,25 +18,36 @@ export class DocumentationComponent implements OnInit {
 
     this.items = [
             {
-                label: 'File',
+                label: 'Cultivo',
                 icon: 'pi pi-pw pi-file',
-                items: [{
-                        label: 'New', 
+                items: [
+                    {
+                        label: 'Presentacion', 
                         icon: 'pi pi-fw pi-plus',
                         items: [
-                            {label: 'User', icon: 'pi pi-fw pi-user-plus'},
-                            {label: 'Filter', icon: 'pi pi-fw pi-filter'}
+                            {label: 'Libros', icon: 'pi pi-fw pi-user-plus'},
+                            {label: 'Videos', icon: 'pi pi-fw pi-filter'}
                         ],
-                        routerLink:'/books'
+                        routerLink:'presentation'
+                        
+                    },                   
+                    {
+                        label: 'Libros', 
+                        icon: 'pi pi-fw pi-plus',
+                        items: [
+                            {label: 'Libros', icon: 'pi pi-fw pi-user-plus'},
+                            {label: 'Videos', icon: 'pi pi-fw pi-filter'}
+                        ],
+                        routerLink:'books'
                         
                     },
-                    {label: 'Open', icon: 'pi pi-fw pi-external-link'},
+                    {label: 'Videos', icon: 'pi pi-fw pi-external-link'},
                     {separator: true},
                     {label: 'Quit', icon: 'pi pi-fw pi-times'}
                 ]
             },
             {
-                label: 'Edit',
+                label: 'Certificación',
                 icon: 'pi pi-fw pi-pencil',
                 items: [
                     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
@@ -44,7 +55,7 @@ export class DocumentationComponent implements OnInit {
                 ]
             },
             {
-                label: 'Help',
+                label: 'Educación',
                 icon: 'pi pi-fw pi-question',
                 items: [
                     {
@@ -71,7 +82,7 @@ export class DocumentationComponent implements OnInit {
                 ]
             },
             {
-                label: 'Actions',
+                label: 'Aplicaciones',
                 icon: 'pi pi-fw pi-cog',
                 items: [
                     {

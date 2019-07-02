@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+
+import {SidebarModule} from 'primeng/sidebar';
+import {MenuModule} from 'primeng/menu';
+
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './components/English/navigation/navigation.component';
@@ -14,11 +19,11 @@ import { EquipoComponent } from './components/Spanish/equipo/equipo.component';
 import { StatisticsComponent } from './components/English/statistics/statistics.component';
 import { EstadisticasComponent } from './components/Spanish/estadisticas/estadisticas.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
-
-
-import {SidebarModule} from 'primeng/sidebar';
-import {MenuModule} from 'primeng/menu';
 import { BooksComponent } from './components/documentation/books/books.component';
+import { PresentationComponent } from './components/documentation/presentation/presentation.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +37,8 @@ import { BooksComponent } from './components/documentation/books/books.component
     StatisticsComponent,
     EstadisticasComponent,
     DocumentationComponent,
-    BooksComponent
+    BooksComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,

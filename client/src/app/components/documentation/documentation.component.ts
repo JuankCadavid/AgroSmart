@@ -23,28 +23,29 @@ export class DocumentationComponent implements OnInit {
                 items: [
                     {
                         label: 'Presentacion', 
-                        icon: 'pi pi-fw pi-plus',
+                        icon: 'pi pi-fw pi-home',
                         items: [
                             {label: 'Libros', icon: 'pi pi-fw pi-user-plus'},
-                            {label: 'Videos', icon: 'pi pi-fw pi-filter'}
+                            {label: 'Videos', icon: 'pi-video'}
                         ],
                         routerLink:'presentation'
                         
                     },                   
                     {
                         label: 'Libros', 
-                        icon: 'pi pi-fw pi-plus',
+                        icon: 'pi pi-fw pi-file',
                         items: [
                             {label: 'Libros', icon: 'pi pi-fw pi-user-plus'},
-                            {label: 'Videos', icon: 'pi pi-fw pi-filter'}
+                            {label: 'Videos', icon: 'pi pi-fw pi-video'}
                         ],
                         routerLink:'books'
                         
                     },
-                    {label: 'Videos', icon: 'pi pi-fw pi-external-link'},
+                    {label: 'Videos', icon: 'pi pi-fw pi-video',  routerLink:'video'},
                     {separator: true},
                     {label: 'Quit', icon: 'pi pi-fw pi-times'}
-                ]
+                ],
+              
             },
             {
                 label: 'Certificación',

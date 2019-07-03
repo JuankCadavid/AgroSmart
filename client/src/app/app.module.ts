@@ -4,8 +4,10 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
+
 import {SidebarModule} from 'primeng/sidebar';
 import {MenuModule} from 'primeng/menu';
+import {FieldsetModule} from 'primeng/fieldset';
 
 
 import { AppComponent } from './app.component';
@@ -21,6 +23,7 @@ import { EstadisticasComponent } from './components/Spanish/estadisticas/estadis
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BooksComponent } from './components/documentation/books/books.component';
 import { PresentationComponent } from './components/documentation/presentation/presentation.component';
+import { VideoComponent } from './components/documentation/video/video.component';
 
 
 
@@ -38,7 +41,8 @@ import { PresentationComponent } from './components/documentation/presentation/p
     EstadisticasComponent,
     DocumentationComponent,
     BooksComponent,
-    PresentationComponent
+    PresentationComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { PresentationComponent } from './components/documentation/presentation/p
     FormsModule,
     BrowserAnimationsModule,
     SidebarModule,
-    MenuModule
+    MenuModule,
+    FieldsetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

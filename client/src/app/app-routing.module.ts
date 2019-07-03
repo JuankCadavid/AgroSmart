@@ -10,6 +10,7 @@ import { EstadisticasComponent } from './components/Spanish/estadisticas/estadis
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BooksComponent } from './components/documentation/books/books.component';
 import { PresentationComponent } from './components/documentation/presentation/presentation.component';
+import {VideoComponent} from './components/documentation/video/video.component';
 
 
 const routes: Routes = [
@@ -53,6 +54,10 @@ const routes: Routes = [
       {
         path: 'books',
         component: BooksComponent
+      },
+      {
+        path: 'video',
+        component:VideoComponent
       }
     ]
   },

@@ -19,9 +19,9 @@ export class NavigationComponent implements OnInit {
     this.ar.url.subscribe(prueba => {
       const myroutePpal = prueba[0].path;
       const myrouteSec = prueba[1].path;
-      const myFinalRoute = myroutePpal+'/'+myrouteSec;
+      const myFinalRoute = myroutePpal + '/' + myrouteSec;
       console.log(myFinalRoute);
-    
+
       if (myFinalRoute == 'English/team') {
         this.router.navigateByUrl("Spanish/equipo");
       }
@@ -29,6 +29,8 @@ export class NavigationComponent implements OnInit {
         this.router.navigateByUrl("Spanish/inicio");
       } else if (myFinalRoute == 'English/statistics') {
         this.router.navigateByUrl("Spanish/estadisticas");
+      } else if (myFinalRoute == 'English/projects') {
+        this.router.navigateByUrl("Spanish/proyectos");
       }
       else {
         this.router.navigateByUrl("English/start");

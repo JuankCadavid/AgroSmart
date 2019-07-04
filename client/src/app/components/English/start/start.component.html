@@ -20,7 +20,7 @@
                 margin-right: auto" class="card-img-top">
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
-                  <button class="btn btn-success btn-block" routerLink="/proyectos" routerLinkActive="active">GO
+                  <button class="btn btn-success btn-block" routerLink="/English/projects" routerLinkActive="active">GO
                   </button>
                 </div>
               </div>
@@ -229,15 +229,35 @@
 
 <footer class="sticky-footer "
   style="background-color:#3a3b42;background-image: url(./assets/designIndustrial/circle.png);background-repeat: no-repeat;background-position:center;background-position-x: right;background-size: 150px">
-  <div class="container my-auto">
-    <div class="copyright text-center my-auto text-white py-2">
-      <h3><b>Contact Us</b></h3>
-      <div class="row">
-        <div class=" text-center" style="display: block;margin-left: auto;margin-right: auto;">
+  <div class="container-fluid">
+    <div class="copyright text-left text-white py-2">
+
+      <div class="row col-xl-12">
+         
+      <div  class="col-xl-3 col-lg-11" style="height: 300px">
+          <x-map #xmap [Options]="_options" [Box]="_box">
+            <x-map-marker
+              [Latitude]="3.346403" 
+              [Longitude]="-76.530388"
+              [Title]="'AgroSmartCo'"
+              [IconInfo]="_iconInfo">
+                <x-info-box
+                  [DisableAutoPan]="true"
+                  [Title]="'My InfoBox'"
+                  [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+                    <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+                </x-info-box>
+            </x-map-marker>
+          </x-map>
+        </div>
+         
+        <div  class="col-xl-6 text-center" style="display: block;margin-left: auto;margin-right: auto;">
+            <h3><b>Contact Us</b></h3>
           <p><img src="./assets/maps.png"> Cra 53 # 13 - 65 Cali, Colombia</p>
           <p> <img src="./assets/phone.png"> 317 515 4213 - 318 554 9129 - 304 4229544</p>
           <p><img src="./assets/mail.png"> contacto@agrosmartco.com.co</p>
-          <br />
+        </div>
+        <div  class="col-xl-3 text-center" style="display: block;margin-left: auto;margin-right: auto;">
         </div>
 
       </div>

@@ -10,7 +10,9 @@ import { EstadisticasComponent } from './components/Spanish/estadisticas/estadis
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BooksComponent } from './components/documentation/books/books.component';
 import { PresentationComponent } from './components/documentation/presentation/presentation.component';
-import {VideoComponent} from './components/documentation/video/video.component';
+import { VideoComponent } from './components/documentation/video/video.component';
+import { ProjectsComponent } from './components/English/projects/projects.component';
+import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.component';
 
 
 const routes: Routes = [
@@ -36,6 +38,14 @@ const routes: Routes = [
     component: EquipoComponent
   },
   {
+    path: 'English/projects',
+    component: ProjectsComponent
+  },
+  {
+    path: 'Spanish/proyectos',
+    component: ProyectosComponent
+  },
+  {
     path: 'English/statistics',
     component: StatisticsComponent
   },
@@ -46,7 +56,7 @@ const routes: Routes = [
   {
     path: 'English/documentation',
     component: DocumentationComponent,
-    children:[
+    children: [
       {
         path: 'presentation',
         component: PresentationComponent
@@ -57,7 +67,7 @@ const routes: Routes = [
       },
       {
         path: 'video',
-        component:VideoComponent
+        component: VideoComponent
       }
     ]
   },

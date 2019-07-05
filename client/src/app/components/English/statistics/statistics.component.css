@@ -1,13 +1,23 @@
 @media screen and (max-width: 400px) {
   .col-xl-12 {
-      width: 100%;
-      float: none;
-      font-size: 10px;
+    width: 100%;
+    float: none;
+    font-size: 10px;
+  }
+  .col-xl-12 h1 {
+    font-size: 12px;
+  }
+
+  .col-xl-2{
+    height: 100px;
   }
   .container {
-      width: 100%;
+    width: 100%;
   }
-  .images{
-      display: none !important;
+  .images {
+    display: none !important;
+  }
+  iframe {
+   height: 250px;
   }
 }

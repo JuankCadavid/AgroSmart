@@ -21,7 +21,6 @@ export class NavegacionComponent implements OnInit {
       const myroutePpal = prueba[0].path;
       const myrouteSec = prueba[1].path;
       const myFinalRoute = myroutePpal + '/' + myrouteSec;
-      console.log(myFinalRoute);
 
       if (myFinalRoute == 'Spanish/equipo') {
         this.router.navigateByUrl("English/team");

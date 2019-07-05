@@ -5,12 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './statistics.component.html',
   styleUrls: ['./statistics.component.css']
 })
+
+
+
 export class StatisticsComponent implements OnInit {
 
+  _picture = './assets/Font-Satitistics.jpg';
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }
+
 
 }

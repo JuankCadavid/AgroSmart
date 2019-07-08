@@ -43,7 +43,8 @@
                 margin-right: auto" class="card-img-top">
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
-                  <button class="btn btn-success btn-block" routerLink="/Spanish/estadisticas" routerLinkActive="active">GO
+                  <button class="btn btn-success btn-block" routerLink="/Spanish/estadisticas"
+                    routerLinkActive="active">GO
                   </button>
 
                 </div>
@@ -90,7 +91,8 @@
                 margin-right: auto" class="card-img-top">
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
-                  <button class="btn btn-success btn-block" routerLink="/English/documentation/presentation" routerLinkActive="active">GO
+                  <button class="btn btn-success btn-block" routerLink="/English/documentation/presentation"
+                    routerLinkActive="active">GO
                   </button>
                 </div>
               </div>
@@ -112,7 +114,7 @@
     <hr>
 
     <div class="container-fluid">
-      <div class="container">
+      <div class="container fm">
         <h1 class="mt-4 text-center font-weight-bold" style="color:#4d4d4d ">Acerca de Nosotros
         </h1>
         <div class="container">
@@ -198,22 +200,39 @@
                   transformación de los diferentes productos cosechados en el campo, ofreciendo equipos industriales
                   que son indispensables para la ejecución de estos procesos.</p>
               </div>
+              <div id="carouselExampleIndicators" class="carousel mx-auto slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/designIndustrial/ralladora.png" style="max-width: 300px;max-height:350px;border-radius: 5%;display: block; margin-left: auto;
+                        margin-right: auto;opacity: 0.8;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/designIndustrial/desfibradora.png" style="max-width: 300px;max-height:350px;border-radius: 5%;display: block; margin-left: auto;
+                        margin-right: auto;opacity: 0.8;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/designIndustrial/ralladora1.png" style="max-width: 300px;max-height:350px;border-radius: 5%;display: block; margin-left: auto;
+                        margin-right: auto;opacity: 0.8;">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="pi pi-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="pi pi-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-11">
-          <img src="./assets/designIndustrial/ralladora.png" style="max-width: 90%;max-height:90%;border-radius: 5%;display: block; margin-left: auto;
-          margin-right: auto;opacity: 0.8;">
-        </div>
 
-        <div class="col-xl-3 col-lg-11">
-          <img src="./assets/designIndustrial/desfibradora.png" style="max-width: 90%;max-height:90%;border-radius: 5%;display: block; margin-left: auto;
-                margin-right: auto;opacity: 0.8;">
-        </div>
-        <div class="col-xl-3 col-lg-11">
-          <img src="./assets/designIndustrial/ralladora1.png" style="max-width: 90%;max-height:90%;border-radius: 5%;display: block; margin-left: auto;
-                  margin-right: auto;opacity: 0.8;">
-        </div>
       </div>
     </div>
     <br>
@@ -221,39 +240,18 @@
   <br>
 </div>
 
-<footer class="sticky-footer "
+<footer class="sticky-footer"
   style="background-color:#3a3b42;background-image: url(./assets/designIndustrial/circle.png);background-repeat: no-repeat;background-position:center;background-position-x: right;background-size: 150px">
-  <div class="container-fluid">
-    <div class="copyright text-left text-white py-2">
-
-      <div class="row col-xl-12">
-         
-      <div  class="col-xl-3 col-lg-11" style="height: 300px">
-          <x-map #xmap [Options]="_options" [Box]="_box">
-            <x-map-marker
-              [Latitude]="3.346403" 
-              [Longitude]="-76.530388"
-              [Title]="'AgroSmartCo'"
-              [IconInfo]="_iconInfo">
-                <x-info-box
-                  [DisableAutoPan]="true"
-                  [Title]="'My InfoBox'"
-                  [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
-                    <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
-                </x-info-box>
-            </x-map-marker>
-          </x-map>
-        </div>
-         
-        <div  class="col-xl-6 text-center" style="display: block;margin-left: auto;margin-right: auto;">
-            <h3><b>Contáctenos</b></h3>
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto text-white py-2">
+      <h3><b>Contáctenos</b></h3>
+      <div class="row">
+        <div class=" text-center" style="display: block;margin-left: auto;margin-right: auto;">
           <p><img src="./assets/maps.png"> Cra 53 # 13 - 65 Cali, Colombia</p>
           <p> <img src="./assets/phone.png"> 317 515 4213 - 318 554 9129 - 304 4229544</p>
           <p><img src="./assets/mail.png"> contacto@agrosmartco.com.co</p>
+          <br />
         </div>
-        <div  class="col-xl-3 text-center" style="display: block;margin-left: auto;margin-right: auto;">
-        </div>
-
       </div>
       <span>By <Strong>A</Strong>groSmart Team</span>
     </div>

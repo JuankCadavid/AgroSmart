@@ -1,17 +1,25 @@
 <app-navigation></app-navigation>
-<video autoplay muted loop id="myVideo">
-  <source src="./assets/Tropical.mp4" type="video/mp4">
-</video>
-
-  <div class="center">
-    <ul class="col-md-12">
-      <li>
-        <h1 class="font-weight-bold text-uppercase">We work to strengthen Agro in Colombia.</h1>
-        <p class="font-weight-bold text-uppercase">Currently, we work for the Coconut sector.</p>
-        <button pButton type="button" label="Statistics" class="ui-button-rounded ui-button-success"></button> 
-        <button pButton type="button" label="E-Commerce" class="ui-button-rounded ui-button-success"></button>
-        <button pButton type="button" label="Crops" class="ui-button-rounded ui-button-success"></button>
-        <button pButton type="button" label="Education" class="ui-button-rounded ui-button-success"></button>
-      </li>
-    </ul>
-  </div>
+<div class="center">
+  <ul class="col-md-12">
+    <li>
+      <h1 class="mt-4 text-center font-weight-bold text-uppercase" style="color:#4d4d4d">We work to strengthen Agro in
+        Colombia.</h1>
+      <p class="font-weight-bold text-uppercase" style="color:#4d4d4d">Currently, we work for the Coconut sector.</p>
+      <button pButton type="button" label="Statistics" class="ui-button-rounded ui-button-success"></button>
+      <button pButton type="button" label="E-Commerce" class="ui-button-rounded ui-button-success"
+        style="margin-left: 10px"></button>
+      <button pButton type="button" label="Crops" class="ui-button-rounded ui-button-success"
+        style="margin-left: 10px;margin-top:10px"></button>
+      <button pButton type="button" label="Education" class="ui-button-rounded ui-button-success"
+        style="margin-left: 10px;margin-top:10px"></button>
+    </li>
+  </ul>
+</div>
+<x-map #xmap [Options]="_options" [Box]="_box">
+  <x-map-marker [Latitude]="3.346403" [Longitude]="-76.530388" [Title]="'AgroSmartCo'" [IconInfo]="_iconInfo">
+    <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+      [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+      <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+    </x-info-box>
+  </x-map-marker>
+</x-map>

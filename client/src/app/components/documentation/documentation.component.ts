@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'src/app/models/menuitem'
+import { defer } from 'q';
 
 @Component({
   selector: 'app-documentation',
@@ -14,7 +15,6 @@ export class DocumentationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
 
     this.items = [
             {
@@ -104,6 +104,7 @@ export class DocumentationComponent implements OnInit {
                 ]
             }
         ];
+
 
 }
 

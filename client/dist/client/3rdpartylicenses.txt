@@ -424,10 +424,10 @@ SOFTWARE.
 @angular/router
 MIT
 
-@angular/forms
+@angular/core
 MIT
 
-@angular/core
+@angular/forms
 MIT
 
 zone.js

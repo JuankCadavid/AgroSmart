@@ -9,6 +9,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { MapModule, MapAPILoader, BingMapAPILoaderConfig, BingMapAPILoader, WindowRef, DocumentRef, MapServiceFactory, BingMapServiceFactory } from "angular-maps";
+import {InputSwitchModule} from 'primeng/inputswitch';
 
 
 
@@ -59,7 +60,8 @@ import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.com
     SidebarModule,
     MenuModule,
     ButtonModule,
-    MapModule.forRootBing()
+    MapModule.forRootBing(),
+    InputSwitchModule
   ],
   providers: [{
     provide: MapAPILoader, deps: [], useFactory: BingMapServiceProviderFactory

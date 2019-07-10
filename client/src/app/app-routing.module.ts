@@ -18,7 +18,7 @@ import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.com
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/English/start',
+    redirectTo: '/Spanish/inicio',
     pathMatch: 'full'
   },
   {

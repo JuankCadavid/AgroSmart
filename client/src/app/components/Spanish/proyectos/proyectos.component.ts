@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MapModule, MapAPILoader, MarkerTypeId, IMapOptions, IBox, IMarkerIconInfo, WindowRef, DocumentRef, MapServiceFactory, 
-  BingMapAPILoaderConfig, BingMapAPILoader, 
-  GoogleMapAPILoader,  GoogleMapAPILoaderConfig
+import {
+  MarkerTypeId, IMapOptions, IBox, IMarkerIconInfo
 } from 'angular-maps';
 
 @Component({
@@ -71,9 +70,9 @@ export class ProyectosComponent implements OnInit {
 
   ngOnInit() {
   }
-  _click(){
+  _click() {
     console.log("hello world...");
- }
+  }
 
 
 

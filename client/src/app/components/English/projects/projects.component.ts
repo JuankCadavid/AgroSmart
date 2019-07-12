@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MapModule, MapAPILoader, MarkerTypeId, IMapOptions, IBox, IMarkerIconInfo, WindowRef, DocumentRef, MapServiceFactory, 
-  BingMapAPILoaderConfig, BingMapAPILoader, 
-  GoogleMapAPILoader,  GoogleMapAPILoaderConfig
+import {
+  MarkerTypeId, IMapOptions, IBox, IMarkerIconInfo
 } from 'angular-maps';
 
 @Component({
@@ -10,7 +9,7 @@ import {MapModule, MapAPILoader, MarkerTypeId, IMapOptions, IBox, IMarkerIconInf
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
- 
+
   checked: boolean = true;
 
   _markerTypeId = MarkerTypeId;
@@ -71,8 +70,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  _click(){
+  _click() {
     console.log("hello world...");
- }
+  }
 
 }

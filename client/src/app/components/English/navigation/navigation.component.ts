@@ -31,6 +31,9 @@ export class NavigationComponent implements OnInit {
       } else if (myFinalRoute == 'English/projects') {
         this.router.navigateByUrl("Spanish/proyectos");
       }
+      else if(myFinalRoute == 'English/certifications'){
+        this.router.navigateByUrl("Spanish/certificaciones");
+      }
       else {
         this.router.navigateByUrl("English/start");
       }

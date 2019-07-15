@@ -30,6 +30,11 @@ import { PresentationComponent } from './components/documentation/presentation/p
 import { VideoComponent } from './components/documentation/video/video.component';
 import { ProjectsComponent } from './components/English/projects/projects.component';
 import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.component';
+import { CertificacionesComponent } from './components/Spanish/certificaciones/certificaciones.component';
+import { ReqprocolombiaComponent } from './components/Spanish/certificaciones/reqprocolombia/reqprocolombia.component';
+import { CertificationsComponent } from './components/English/certifications/certifications.component';
+
+
 
 
 
@@ -49,7 +54,11 @@ import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.com
     PresentationComponent,
     VideoComponent,
     ProjectsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    CertificacionesComponent,
+    ReqprocolombiaComponent,
+    CertificationsComponent,
+  
   ],
   imports: [
     BrowserModule,

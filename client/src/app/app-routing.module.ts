@@ -13,6 +13,10 @@ import { PresentationComponent } from './components/documentation/presentation/p
 import { VideoComponent } from './components/documentation/video/video.component';
 import { ProjectsComponent } from './components/English/projects/projects.component';
 import { ProyectosComponent } from './components/Spanish/proyectos/proyectos.component';
+import { CertificacionesComponent } from './components/Spanish/certificaciones/certificaciones.component';
+import { ReqprocolombiaComponent } from './components/Spanish/certificaciones/reqprocolombia/reqprocolombia.component';
+import { CertificationsComponent } from 'src/app/components/English/certifications/certifications.component';
+
 
 
 const routes: Routes = [
@@ -71,6 +75,15 @@ const routes: Routes = [
       }
     ]
   },
+  
+  {
+    path: 'Spanish/certificaciones',
+    component: CertificacionesComponent
+  },
+  {
+    path: 'English/certifications',
+    component: CertificationsComponent
+  }
 
 
 ];

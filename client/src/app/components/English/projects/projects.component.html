@@ -1,17 +1,207 @@
 <app-navigation></app-navigation>
-<video autoplay muted loop id="myVideo">
+<!-- <video autoplay muted loop id="myVideo">
   <source src="./assets/Tropical.mp4" type="video/mp4">
-</video>
+</video> -->
 
-  <div class="center">
-    <ul class="col-md-12">
+<div class="center"
+  style="background-image: url(./assets/designIndustrial/palma.png);background-repeat: no-repeat;background-position:top;background-position-x: right;">
+
+  <div class="card shadow py-10 mb-2">
+    <div class="card-body">
       <li>
-        <h1 class="font-weight-bold text-uppercase">We work to strengthen Agro in Colombia.</h1>
-        <p class="font-weight-bold text-uppercase">Currently, we work for the Coconut sector.</p>
-        <button pButton type="button" label="Statistics" class="ui-button-rounded ui-button-success"></button> 
-        <button pButton type="button" label="E-Commerce" class="ui-button-rounded ui-button-success"></button>
-        <button pButton type="button" label="Crops" class="ui-button-rounded ui-button-success"></button>
-        <button pButton type="button" label="Education" class="ui-button-rounded ui-button-success"></button>
+        <h1 class="mt-4 text-center font-weight-bold text-uppercase" style="color:#4d4d4d">We work to strengthen the
+          Agro in Colombia</h1>
+        <p class="font-weight-bold text-uppercase" style="color:#4d4d4d">We are currently working with the sector
+          Cocotero del Pacifico Colombiano, addressing the following aspects:
+        </p>
+        <div class="container">
+
+          <button pButton type="button" label="Statistics" class="ui-button-rounded ui-button-success"
+            data-toggle="modal" data-target="#modalStatistics"></button>
+
+          <button pButton type="button" label="E-Commerce" class="ui-button-rounded ui-button-success"
+            style="margin-left: 10px" data-toggle="modal" data-target="#modalEcom"></button>
+
+          <button pButton type="button" label="Crop Certification" class="ui-button-rounded ui-button-success"
+            style="margin-left: 10px;margin-top:10px" data-toggle="modal" data-target="#modalCertification"></button>
+
+          <button pButton type="button" label="Education" class="ui-button-rounded ui-button-success"
+            style="margin-left: 10px;margin-top:10px" data-toggle="modal" data-target="#modalEducation"></button>
+        </div>
       </li>
-    </ul>
+    </div>
   </div>
+
+  <div style="max-height: 600px;height: 100%;width: 100%">
+    <x-map #xmap [Options]="_options" [Box]="_box">
+      <x-map-marker [Latitude]="3.346403" [Longitude]="-76.530388" [Title]="'AgroSmartCo'" [IconInfo]="_iconInfo">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
+      <x-map-marker [Latitude]="1.809015" [Longitude]="-78.768029" [Title]="'Tumaco'" [IconInfo]="_iconInfoTumaco">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
+      <x-map-marker [Latitude]="2.571764" [Longitude]="-77.886038" [Title]="'Guapi'" [IconInfo]="_iconInfoGuapi">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
+      <x-map-marker [Latitude]="2.773577" [Longitude]="-77.667324" [Title]="'Timbiqui'" [IconInfo]="_iconInfoTimbiqui">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
+      <x-map-marker [Latitude]="3.884738" [Longitude]="-77.065924" [Title]="'Buenaventura'"
+        [IconInfo]="_iconInfoBuenaventura">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
+    </x-map>
+  </div>
+
+</div>
+
+
+<div class="modal fade" id="modalStatistics" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <p-inputSwitch [(ngModel)]="checked" disabled="true"></p-inputSwitch>
+          <p>Project: ASC02 </p>
+          <p>Name: Coconut Sector Statistics.</p>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        This project consists of the elaboration of a system to store, process and show in an appropriate way, the
+        data collected from the entire Coco production chain in the Colombian Pacific.
+        <p>
+          This will allow to have a better visibility of the sector and thus take opportune decisions that favor the
+          growth of the chain and position it among the most competitive in the world.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" routerLink="/Spanish/estadisticas/"
+          fragment="5" routerLinkActive="active">Example - Control Board</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <p-inputSwitch [(ngModel)]="checked" disabled="true"></p-inputSwitch>
+          <p>Project: ASC03 </p>
+          <p>Name: Knowledge management of cocotera communities.</p>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>
+          Currently the sector has problems in the management of knowledge they have about the cultivation of
+                     Coconut,
+                     in which ancestral practices are followed that are different for each region.
+        </p>
+
+        494/5000
+        What is intended is to take this knowledge and develop a set of good practices that are hosted in
+        a centralized information system and that any person that is part of the productive chain of the coconut
+        can access this information without any problem from any device. In this way we will preserve
+        the knowledge of this beautiful work and it will be possible to transmit
+        to future generations in a more didactic and easy to learn way.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"
+          routerLink="/English/documentation/presentation" routerLinkActive="active">Example - Platform
+                     Management</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEcom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <p-inputSwitch [(ngModel)]="checked" disabled="true"></p-inputSwitch>
+          <p>Project: ASC01 </p>
+          <p>Name: Marketing platform from coconut farming to industry.</p>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>
+          In the coconut sector there is a great problem that occurs when producers can sell
+          their products in an appropriate way which causes many of the producing farms to lose their crops.
+        </p>
+        In order to attack this problem, a technological platform will be created that allows farmers to sell
+        your crops directly to industrial companies or buyers of any kind who are interested in the
+        Coconut farming if need to have intermediaries.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCertification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <p-inputSwitch [(ngModel)]="checked" disabled="true"></p-inputSwitch>
+          <p>Project: ASC04 </p>
+          <p>Name: Certification of Production Farms</p>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>
+          The processes that concern the certification of production farms are an important pillar for the
+           growth of the sector since in this way crops can be exported to other countries, which will allow
+           obtain greater profits and more demand for the product.
+        </p>
+
+        To achieve this goal, a platform will be created in which all the processes and formats that will be centralized
+        will be centralized.
+        are required to achieve the certification of a farm, all this accompanied by our team of consultants
+        specialized in the subject.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"
+          routerLink="/English/documentation/certificacion" routerLinkActive="active">Process of certification</button>
+      </div>
+    </div>
+  </div>
+</div>

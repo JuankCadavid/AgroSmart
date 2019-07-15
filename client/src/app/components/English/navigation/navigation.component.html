@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background:rgba(32, 151, 91,0.8);">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background:rgba(32, 151, 91,0.8); box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);">
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/English/start']">
       <h4><img src="./assets/drone3.png" style="max-height:40px;max-width: 40px;"><strong> A</strong>groSmart Co</h4>
@@ -17,6 +17,10 @@
           <a class="nav-link" routerLink="/English/team" routerLinkActive="active">
             Team</a>
         </li>
+        <li>
+            <a class="nav-link" routerLink="/English/projects" routerLinkActive="active">
+              Projects</a>
+          </li>
 
         <li class="nav-item">
           <a #rutas class="nav-link" routerLink="/" routerLinkActive="active" value="English/start" (click)=getCurrentRoute()>

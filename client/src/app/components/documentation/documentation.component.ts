@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'src/app/models/menuitem'
+import { defer } from 'q';
 
 @Component({
   selector: 'app-documentation',
@@ -14,7 +15,6 @@ export class DocumentationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
 
     this.items = [
             {
@@ -43,7 +43,7 @@ export class DocumentationComponent implements OnInit {
                     },
                     {label: 'Videos', icon: 'pi pi-fw pi-video',  routerLink:'video'},
                     {separator: true},
-                    {label: 'Quit', icon: 'pi pi-fw pi-times'}
+                    {label: 'Borrar', icon: 'pi pi-fw pi-times',  routerLink:'/English/documentation'}
                 ],
               
             },
@@ -51,8 +51,8 @@ export class DocumentationComponent implements OnInit {
                 label: 'Certificación',
                 icon: 'pi pi-fw pi-pencil',
                 items: [
-                    {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-                    {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+                    {label: 'Delete', icon: 'pi pi-fw pi-trash', disabled:true},
+                    {label: 'Refresh', icon: 'pi pi-fw pi-refresh', disabled:true}
                 ]
             },
             {
@@ -61,7 +61,8 @@ export class DocumentationComponent implements OnInit {
                 items: [
                     {
                         label: 'Contents',
-                        icon: 'pi pi-pi pi-bars'
+                        icon: 'pi pi-pi pi-bars',
+                        disabled:true
                     },
                     {
                         label: 'Search', 
@@ -79,7 +80,9 @@ export class DocumentationComponent implements OnInit {
                                 label: 'User',
                                 icon: 'pi pi-fw pi-file',
                             }
-                    ]}
+                    ]
+                    , disabled:true
+                }
                 ]
             },
             {
@@ -93,6 +96,7 @@ export class DocumentationComponent implements OnInit {
                             {label: 'Save', icon: 'pi pi-fw pi-save'},
                             {label: 'Update', icon: 'pi pi-fw pi-save'},
                         ]
+                        , disabled:true
                     },
                     {
                         label: 'Other',
@@ -100,10 +104,12 @@ export class DocumentationComponent implements OnInit {
                         items: [
                             {label: 'Delete', icon: 'pi pi-fw pi-minus'}
                         ]
+                        , disabled:true
                     }
                 ]
             }
         ];
+
 
 }
 

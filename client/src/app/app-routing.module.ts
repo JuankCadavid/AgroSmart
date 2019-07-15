@@ -22,7 +22,7 @@ import { CertificationsComponent } from 'src/app/components/English/certificatio
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/English/start',
+    redirectTo: '/Spanish/inicio',
     pathMatch: 'full'
   },
   {

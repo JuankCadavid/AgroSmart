@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark"style="background:rgba(32, 151, 91,0.8)">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark"style="background:rgba(32, 151, 91,0.8);box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);">
     <div class="container-fluid" >
       <a class="navbar-brand" [routerLink]="['/Spanish/inicio']">
         <h4><img src="./assets/drone3.png" style="max-height:40px;max-width: 40px;"><strong> A</strong>groSmart Co</h4>
@@ -16,6 +16,10 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/Spanish/equipo" routerLinkActive="active">
               Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Spanish/proyectos" routerLinkActive="active">
+              Proyectos</a>
           </li>
           <li class="nav-item">
                 <a class="nav-link" routerLink="/" routerLinkActive="active"  value="Spanish/start" (click)=getCurrentRoute()>

@@ -1,9 +1,9 @@
+<app-navegacion></app-navegacion>
 <div class="container-fluid"
   style="background-image: url(./assets/Banner.jpg);background-repeat: no-repeat;background-size:cover;">
-  <app-navegacion></app-navegacion>
   <div class="container py-4">
 
-    <div class="row">
+    <div class="row" ngsReveal [ngsReveal]="{ reset: true}">
 
       <div class="col-xl-3 col-md-4 mb-2">
         <div class="card border-left shadow h-100 py-2"
@@ -68,7 +68,8 @@
                 margin-right: auto" class="card-img-top">
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
-                  <button class="btn btn-success btn-block" routerLink="/Spanish/certificaciones" routerLinkActive="active">GO</button>
+                  <button class="btn btn-success btn-block" routerLink="/Spanish/certificaciones"
+                    routerLinkActive="active">GO</button>
 
                 </div>
               </div>
@@ -113,77 +114,108 @@
 
     <hr>
 
-    <div class="container-fluid">
-      <div class="container fm">
-        <h1 class="mt-4 text-center font-weight-bold" style="color:#4d4d4d ">Acerca de Nosotros
-        </h1>
-        <div class="container">
-          <p class="text-left font-weight">Somos una empresa netamente caleña, que nace para
-            brindar soluciones innovadoras a través de las TIC en el sector agricultor colombiano.
-          </p>
-          <p> Estamos seguros que, a través de soluciones de innovadoras, ayudaremos e impulsaremos el crecimiento de un
-            sector con enorme potencial en el panorama nacional e internacional. Proporcionamos soluciones de desarrollo
-            de software utilizando tecnología de punta, comprometiéndonos a entregar productos que se ajusten a las
-            necesidades del sector.</p>
+    <section id="us" [ngsReveal]="{ reset: true}">
+      <div class="container-fluid">
+        <div class="container fm">
+          <h1 class="mt-4 text-center font-weight-bold" style="color:#4d4d4d " routerLink="/Spanish/equipo"
+            routerLinkActive="active">Acerca de Nosotros
+          </h1>
+          <div class="container">
+            <p class="text-left font-weight" routerLink="/Spanish/equipo" routerLinkActive="active">Somos una empresa
+              netamente caleña, que nace para
+              brindar soluciones innovadoras a través de las TIC en el sector agricultor colombiano.
+            </p>
+            <p routerLink="/Spanish/equipo" routerLinkActive="active"> Estamos seguros que, a través de soluciones de
+              innovadoras, ayudaremos e impulsaremos el crecimiento de
+              un
+              sector con enorme potencial en el panorama nacional e internacional. Proporcionamos soluciones de
+              desarrollo
+              de software utilizando tecnología de punta, comprometiéndonos a entregar productos que se ajusten a las
+              necesidades del sector.</p>
 
-          <p>Nuestro equipo,conoce las virtudes y deficiencias del sector, por lo que estamos en la
-            capacidad de brindar la mejor respuesta a cada una de las problemáticas y necesidades.</p>
-          <img src="./assets/AppsCoDip.png" style="max-height: 400px;max-width:400px;width:100% ;display: block; margin-left: auto;
-          margin-right: auto;border-radius: 4%"> <br>
-        </div>
-      </div>
-    </div>
+            <p routerLink="/Spanish/equipo" routerLinkActive="active">Nuestro equipo,conoce las virtudes y deficiencias
+              del sector, por lo que estamos en la
+              capacidad de brindar la mejor respuesta a cada una de las problemáticas y necesidades.</p>
 
-    <div class="container-fluid py-5" style="background-color:#f9f8f8">
-      <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-10">
-          <div class="card shadow py-2 mb-2" style="display: block; margin-left: auto;">
-            <h3 class="mt-4 text-center font-weight-bold" style="color:#2256a0">E-Commerce
-            </h3>
-            <div class="card-body">
-              <div class="container">
-                <p class="text-left font-weight">El E-Commerce, desde cualquier ámbito, ha
-                  mostrado un increíble crecimiento en la comercialización de productos tecnológicos, textiles,
-                  comestibles, etc. Por este motivo, AgroSmart Co apuesta a la implementación de una plataforma de
-                  E-Commerce que permita a los empresarios y productores tener un contacto directo, fomentando y
-                  facilitando el crecimiento, la visibilidad, la confianza, las ventas y los negocios en el sector.
-                </p>
+            <div class="row justify-content-center">
+              <div class="col-xl-3">
+                <img src="./assets/AppsCo.png"
+                  style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
+                  routerLink="/Spanish/equipo" routerLinkActive="active">
               </div>
+              <div class="col-xl-3">
+                <img src="./assets/fondoe.png"
+                  style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
+                  routerLink="/Spanish/equipo" routerLinkActive="active">
+              </div>
+              <div class="col-xl-3">
+                <img src="./assets/usb.png"
+                  style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
+                  routerLink="/Spanish/equipo" routerLinkActive="active">
+              </div>
+
             </div>
+
+            <br>
           </div>
         </div>
-        <div class="col-xl-5 col-lg-10">
-          <img src="./assets/MercadoCampesino.jpg" style="max-width:450px;max-height: 450px;width: 100%;height: 90% ;border-radius: 5%;display: block; margin-left: auto;
-          margin-right: auto;opacity:0.9;">
-        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-10">
-          <img src="./assets/Drone.gif" style="max-width:450px;max-height: 450px;width: 100%;height: 90%;border-radius: 5%;display: block; margin-left: auto;
-          margin-right: auto; opacity: 0.9;">
-        </div>
-        <div class="col-xl-5 col-lg-10">
-          <div class="card shadow py-2 mb-2">
-            <div class="card-body">
-              <h3 class="mt-4 text-center font-weight-bold" style="color:rgb(31, 138, 84)">Soluciones
-                Agro
+    <section id="ecom" ngsReveal [ngsReveal]="{ reset: true}">
+      <div class="container-fluid py-5" style="background-color:#f9f8f8">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-10">
+            <div class="card shadow py-2 mb-2" style="display: block; margin-left: auto;">
+              <h3 class="mt-4 text-center font-weight-bold" style="color:#2256a0">E-Commerce
               </h3>
-              <div class="container">
-                <p class="text-left font-weight">Además de plataformas como el E-Commerce,
-                  AgroSmart Co enfoca su visión en aportar al sector agro, soluciones que permitan generar confianza y
-                  faciliten, a los interesados, la creación de estrategias que permitan crear un enfoque en el
-                  crecimiento. Para eso, Agro-Smart plantea dentro de su portafolio de innovación, soluciones como
-                  Agro-Estadísticas, Sistemas inteligentes de Riego y Sistemas de Detección de Plagas.
-                </p>
+              <div class="card-body">
+                <div class="container">
+                  <p class="text-left font-weight">El E-Commerce, desde cualquier ámbito, ha
+                    mostrado un increíble crecimiento en la comercialización de productos tecnológicos, textiles,
+                    comestibles, etc. Por este motivo, AgroSmart Co apuesta a la implementación de una plataforma de
+                    E-Commerce que permita a los empresarios y productores tener un contacto directo, fomentando y
+                    facilitando el crecimiento, la visibilidad, la confianza, las ventas y los negocios en el sector.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-10">
+            <img src="./assets/MercadoCampesino.jpg" style="max-width:450px;max-height: 450px;width: 100%;height: 90% ;border-radius: 5%;display: block; margin-left: auto;
+          margin-right: auto;opacity:0.9;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" ngsReveal [ngsReveal]="{ reset: true}">
+      <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-10">
+            <img src="./assets/Drone.gif" style="max-width:450px;max-height: 450px;width: 100%;height: 90%;border-radius: 5%;display: block; margin-left: auto;
+          margin-right: auto; opacity: 0.9;">
+          </div>
+          <div class="col-xl-5 col-lg-10">
+            <div class="card shadow py-2 mb-2">
+              <div class="card-body">
+                <h3 class="mt-4 text-center font-weight-bold" style="color:rgb(31, 138, 84)">Soluciones
+                  Agro
+                </h3>
+                <div class="container">
+                  <p class="text-left font-weight">Además de plataformas como el E-Commerce,
+                    AgroSmart Co enfoca su visión en aportar al sector agro, soluciones que permitan generar confianza y
+                    faciliten, a los interesados, la creación de estrategias que permitan crear un enfoque en el
+                    crecimiento. Para eso, Agro-Smart plantea dentro de su portafolio de innovación, soluciones como
+                    Agro-Estadísticas, Sistemas inteligentes de Riego y Sistemas de Detección de Plagas.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="container py-5"
       style="background-image: url(./assets/designIndustrial/palma.png);background-repeat: no-repeat;background-position:top;background-position-x: right;background-color:#f6f8f6">
@@ -219,6 +251,7 @@
                     <img src="./assets/designIndustrial/ralladora1.png" style="max-width: 300px;max-height:350px;border-radius: 5%;display: block; margin-left: auto;
                         margin-right: auto;opacity: 0.8;">
                   </div>
+
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <span class="pi pi-chevron-left" aria-hidden="true"></span>

@@ -10,6 +10,7 @@ import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { MapModule, MapAPILoader, BingMapAPILoaderConfig, BingMapAPILoader, WindowRef, DocumentRef, MapServiceFactory, BingMapServiceFactory } from "angular-maps";
 import {InputSwitchModule} from 'primeng/inputswitch';
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
 
 
@@ -70,12 +71,13 @@ import { CertificationsComponent } from './components/English/certifications/cer
     MenuModule,
     ButtonModule,
     MapModule.forRootBing(),
-    InputSwitchModule
+    InputSwitchModule,
+    NgsRevealModule
   ],
   providers: [{
     provide: MapAPILoader, deps: [], useFactory: BingMapServiceProviderFactory
   }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
 export function BingMapServiceProviderFactory() {

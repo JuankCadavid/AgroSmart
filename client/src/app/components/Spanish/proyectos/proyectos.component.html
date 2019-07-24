@@ -61,9 +61,43 @@
           <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
         </x-info-box>
       </x-map-marker>
+      <x-map-marker [Latitude]="2.450548" [Longitude]="-77.980175" [Title]="'Iscuande'" [IconInfo]="_iconIscuande">
+        <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'"
+          [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+          <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+        </x-info-box>
+      </x-map-marker>
     </x-map>
   </div>
+  <footer class="sticky-footer pt-4" style="background-color:rgba(38,50,56);color: white;position:sticky;">
 
+
+      <div class="container-fluid text-center text-md-left">
+    
+        <div class="text-center my-auto text-white py-2">
+          <h3><b>Contáctenos</b></h3>
+          <div class="row">
+            <div class=" text-center" style="display: block;margin-left: auto;margin-right: auto;">
+              <p><img src="./assets/maps.png"> Cra 53 # 13 - 65 Cali, Colombia</p>
+              <p> <img src="./assets/phone.png"> 317 515 4213 - 318 554 9129 - 304 4229544</p>
+              <p><img src="./assets/mail.png"> contacto@agrosmartco.com.co</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+    
+             <a target="_blank" href="https://www.linkedin.com/company/agrosmart-co"><img src="./assets/linkedin.png" style="max-width: 50px;max-height: 50px"></a> 
+              <a  target="_blank" href="https://www.youtube.com/channel/UCM7SZIlGOs9pZpAIHogapUw"><img src="./assets/youtube.png" style="max-width: 50px;max-height: 50px;margin-left: 10px"></a> 
+      
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="footer-copyright text-center py-3" style="background-color:rgba(30,40,45);color: white">© 2019 Copyright:
+        <a> AgroSmart Co</a>
+      </div>
+    
+    </footer>
 </div>
 
 
@@ -206,3 +240,4 @@
     </div>
   </div>
 </div>
+

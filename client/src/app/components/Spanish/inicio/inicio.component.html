@@ -19,9 +19,9 @@
                 margin-right: auto" class="card-img-top">
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
-                  <button class="btn btn-success btn-block" routerLink="/Spanish/proyectos" routerLinkActive="active">GO
+                  <button class="btn btn-success btn-block" routerLink="/Spanish/proyectos"
+                    routerLinkActive="active">Ver
                   </button>
-
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
                   <button class="btn btn-success btn-block" routerLink="/Spanish/estadisticas"
-                    routerLinkActive="active">GO
+                    routerLinkActive="active">Ver
                   </button>
 
                 </div>
@@ -69,7 +69,7 @@
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
                   <button class="btn btn-success btn-block" routerLink="/Spanish/certificaciones"
-                    routerLinkActive="active">GO</button>
+                    routerLinkActive="active">Ver</button>
 
                 </div>
               </div>
@@ -92,7 +92,7 @@
                 <hr>
                 <div class="h4 mb-0 font-weight-bold text-gray-800">
                   <button class="btn btn-success btn-block" routerLink="/English/documentation/presentation"
-                    routerLinkActive="active">GO
+                    routerLinkActive="active">Ver
                   </button>
                 </div>
               </div>
@@ -107,46 +107,59 @@
 <div class="d-flex toggled" id="wrapper">
   <div class="container-fluid">
 
-    <hr>
-
     <section id="us" [ngsReveal]="{ reset: true}">
-      <div class="container-fluid">
-        <div class="container fm">
-          <h1 class="mt-4 text-center font-weight-bold" style="color:#4d4d4d " routerLink="/Spanish/equipo"
-            routerLinkActive="active">Acerca de Nosotros
-          </h1>
-          <div class="container">
-            <p class="text-left font-weight" routerLink="/Spanish/equipo" routerLinkActive="active">Somos una empresa
-              netamente caleña, que nace para
-              brindar soluciones innovadoras a través de las TIC en el sector agricultor colombiano.
-            </p>
-            <p routerLink="/Spanish/equipo" routerLinkActive="active"> Estamos seguros que, a través de soluciones de
-              innovadoras, ayudaremos e impulsaremos el crecimiento de
-              un
-              sector con enorme potencial en el panorama nacional e internacional. Proporcionamos soluciones de
-              desarrollo
-              de software utilizando tecnología de punta, comprometiéndonos a entregar productos que se ajusten a las
-              necesidades del sector.</p>
+      <div class="container-fluid py-4">
+        <div class="container-fluid fm">
+          <div class="row">
+            <div class="col-xl-7 col-lg-10">
 
-            <p routerLink="/Spanish/equipo" routerLinkActive="active">Nuestro equipo,conoce las virtudes y deficiencias
-              del sector, por lo que estamos en la
-              capacidad de brindar la mejor respuesta a cada una de las problemáticas y necesidades.</p>
+              <h1 class="mt-4 text-center font-weight-bold" style="color:#4d4d4d " routerLink="/Spanish/equipo"
+                routerLinkActive="active">Acerca de Nosotros
+              </h1>
+              <p class="text-left lead" routerLink="/Spanish/equipo" routerLinkActive="active">Somos una
+                empresa
+                netamente caleña, que nace para
+                brindar soluciones innovadoras a través de las TIC en el sector agricultor colombiano.
+              </p>
+              <p class="lead" routerLink="/Spanish/equipo" routerLinkActive="active"> Estamos seguros que, a través de
+                soluciones de
+                innovadoras, ayudaremos e impulsaremos el crecimiento de
+                un
+                sector con enorme potencial en el panorama nacional e internacional. Proporcionamos soluciones de
+                desarrollo
+                de software utilizando tecnología de punta, comprometiéndonos a entregar productos que se ajusten
+                a las
+                necesidades del sector.</p>
 
-            <div class="row justify-content-center">
-              <div class="col-xl-3">
-                <img src="./assets/AppsCo.png"
-                  style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
-                  routerLink="/Spanish/equipo" routerLinkActive="active">
-              </div>
-              <div class="col-xl-3">
-                <img src="./assets/usb.png"
-                  style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
-                  routerLink="/Spanish/equipo" routerLinkActive="active">
+              <p class="lead" routerLink="/Spanish/equipo" routerLinkActive="active">Nuestro equipo,conoce las virtudes y
+                deficiencias
+                del sector, por lo que estamos en la
+                capacidad de brindar la mejor respuesta a cada una de las problemáticas y necesidades.</p>
+
+              <div class="imageUS">
+                <div class="row justify-content-center">
+                  <div class="col-xl-3">
+                    <img src="./assets/AppsCo.png"
+                      style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
+                      routerLink="/Spanish/equipo" routerLinkActive="active">
+                  </div>
+                  <div class="col-xl-3">
+                    <img src="./assets/usb.png"
+                      style="max-height: 200px;max-width:200px;width:100% ;display: block; margin-left: auto;  margin-right: auto;border-radius: 4%"
+                      routerLink="/Spanish/equipo" routerLinkActive="active">
+                  </div>
+                </div>
               </div>
             </div>
-
-            <br>
+            <div class="col-xl-5 col-lg-10 py-4">
+              <iframe class="framev" src="//www.youtube.com/embed/CV6dfVKHNAg" frameborder="0" allowfullscreen style="max-width:650px;max-height: 350px;width: 100%;height: 90% ;border-radius: 1%;display: block; margin-left: auto;
+              margin-right: auto;opacity:0.9;"></iframe>
+            </div>
           </div>
+
+
+          <br>
+
         </div>
       </div>
     </section>
@@ -156,11 +169,11 @@
         <div class="row justify-content-center">
           <div class="col-xl-5 col-lg-10">
             <div class="card shadow py-2 mb-2" style="display: block; margin-left: auto;">
-              <h3 class="mt-4 text-center font-weight-bold" style="color:#2256a0">E-Commerce
+              <h3 class="mt-4 text-center font-weight-bold" style="color:#2256a0">Comercio Electrónico
               </h3>
               <div class="card-body">
                 <div class="container">
-                  <p class="text-center font-weight">El E-Commerce, desde cualquier ámbito, ha
+                  <p class="text-left lead">El Comercio Electrónico, desde cualquier ámbito, ha
                     mostrado un increíble crecimiento en la comercialización de productos tecnológicos, textiles,
                     comestibles, etc. Por este motivo, AgroSmart Co apuesta a la implementación de una plataforma de
                     E-Commerce que permita a los empresarios y productores tener un contacto directo, fomentando y
@@ -170,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-10">
+          <div class="col-xl-5 col-lg-10 py-4">
             <img src="./assets/MercadoCampesino.jpg" style="max-width:450px;max-height: 450px;width: 100%;height: 90% ;border-radius: 5%;display: block; margin-left: auto;
           margin-right: auto;opacity:0.9;">
           </div>
@@ -181,18 +194,18 @@
     <section id="solutions" ngsReveal [ngsReveal]="{ reset: true}">
       <div class="container-fluid py-5">
         <div class="row justify-content-center">
-          <div class="col-xl-5 col-lg-10">
+          <div class="col-xl-5 col-lg-10 py-4">
             <img src="./assets/Drone.gif" style="max-width:450px;max-height: 450px;width: 100%;height: 90%;border-radius: 5%;display: block; margin-left: auto;
           margin-right: auto; opacity: 0.9;">
           </div>
           <div class="col-xl-5 col-lg-10">
             <div class="card shadow py-2 mb-2">
-              <div class="card-body">
                 <h3 class="mt-4 text-center font-weight-bold" style="color:rgb(31, 138, 84)">Soluciones
-                  Agro
-                </h3>
+                    Agro
+                  </h3>
+              <div class="card-body">
                 <div class="container">
-                  <p class="text-left font-weight">Además de plataformas como el E-Commerce,
+                  <p class="text-left lead">Además de plataformas como el E-Commerce,
                     AgroSmart Co enfoca su visión en aportar al sector agro, soluciones que permitan generar confianza y
                     faciliten, a los interesados, la creación de estrategias que permitan crear un enfoque en el
                     crecimiento. Para eso, Agro-Smart plantea dentro de su portafolio de innovación, soluciones como
@@ -211,13 +224,14 @@
       <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-11">
           <div class="card shadow py-2 mb-2" style="background:rgba(255, 255, 255,0.8)">
-            <div class="card-body">
               <h3 class="mt-4 text-center font-weight-bold" style="color:#0197cc">Diseño Industrial
-              </h3>
+                </h3>
+            <div class="card-body">
               <div class="container">
-                <p class="text-center font-weight">En el día a día, cada empresario
-                  agroindustrial requiere de maquinaria para agilizar sus procesos de producción. Es por eso que Agro
-                  Smart Co, le apuesta (con su equipo de diseño industrial) al diseño y creación de implementos para la
+                <p class="text-center lead">En el día a día, cada empresario
+                  agroindustrial requiere de maquinaria para agilizar sus procesos de producción. Es por eso que
+                  AgroSmart Co, le apuesta (con su equipo de diseño industrial) al diseño y creación de implementos para
+                  la
                   transformación de los diferentes productos cosechados en el campo, ofreciendo equipos industriales
                   que son indispensables para la ejecución de estos procesos.</p>
               </div>
@@ -257,25 +271,38 @@
 
       </div>
     </div>
+
     <br>
   </div>
   <br>
 </div>
 
-<footer class="sticky-footer"
-  style="background-color:#3a3b42;background-image: url(./assets/designIndustrial/circle.png);background-repeat: no-repeat;background-position:center;background-position-x: right;background-size: 150px">
-  <div class="container my-auto">
-    <div class="copyright text-center my-auto text-white py-2">
+<footer class="sticky-footer pt-4" style="background-color:rgba(38,50,56);color: white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="text-center my-auto text-white py-2">
       <h3><b>Contáctenos</b></h3>
       <div class="row">
         <div class=" text-center" style="display: block;margin-left: auto;margin-right: auto;">
           <p><img src="./assets/maps.png"> Cra 53 # 13 - 65 Cali, Colombia</p>
           <p> <img src="./assets/phone.png"> 317 515 4213 - 318 554 9129 - 304 4229544</p>
           <p><img src="./assets/mail.png"> contacto@agrosmartco.com.co</p>
-          <br />
         </div>
       </div>
-      <span>By <Strong>A</Strong>groSmart Team</span>
+      <div class="row justify-content-center">
+
+         <a target="_blank" href="https://www.linkedin.com/company/agrosmart-co"><img src="./assets/linkedin.png" style="max-width: 50px;max-height: 50px"></a> 
+          <a  target="_blank" href="https://www.youtube.com/channel/UCM7SZIlGOs9pZpAIHogapUw"><img src="./assets/youtube.png" style="max-width: 50px;max-height: 50px;margin-left: 10px"></a> 
+  
+      </div>
     </div>
+
   </div>
+
+  <div class="footer-copyright text-center py-3" style="background-color:rgba(30,40,45);color: white">© 2019 Copyright:
+    <a> AgroSmart Co</a>
+  </div>
+
 </footer>

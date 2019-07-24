@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit {
 
   _iconInfo: IMarkerIconInfo = {
     markerType: MarkerTypeId.DynmaicCircleMarker,
-    size: { width: 70, height: 70 },
+    size: { width: 60, height: 60 },
     color: 'rgba(97,205,196,0.7)',
     markerOffsetRatio: { x: 0.5, y: 0.5 },
   };
@@ -53,6 +53,13 @@ export class ProjectsComponent implements OnInit {
   _iconInfoTumaco: IMarkerIconInfo = {
     markerType: MarkerTypeId.DynmaicCircleMarker,
     size: { width: 40, height: 40 },
+    color: 'rgba(97,205,196,0.7)',
+    markerOffsetRatio: { x: 0.5, y: 0.5 },
+  };
+
+  _iconIscuande: IMarkerIconInfo = {
+    markerType: MarkerTypeId.DynmaicCircleMarker,
+    size: { width: 30, height: 30 },
     color: 'rgba(97,205,196,0.7)',
     markerOffsetRatio: { x: 0.5, y: 0.5 },
   };

@@ -1,13 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
 .colortitulos {
-    color: #4d4d4d
+  color: #4d4d4d
 }
 
 .circular--square {
-    border-radius: 50%;
-  }
+  border-radius: 50%;
+}
 
+@font-face {
+  font-family: "Centrale Sans Medium";
+  src: url('CentraleSansCnd-Medium.otf');
+}
 
-  h1,h2,h3,h4,h5,p,a,span{
-    font-family: "Helvetica";
-  }
+@font-face {
+  font-family: "Centrale Sans Bold";
+  src: url('CentraleSansCnd-Bold.otf');
+}
+
+@font-face {
+  font-family: "Centrale Sans Light";
+  src: url('CentraleSansCnd-Light.otf');
+}
+
+@font-face {
+  font-family: "Centrale Sans Book";
+  src: url('CentraleSansCnd-Book.otf');
+}
+
+h1, h2 {
+  font-family: "Centrale Sans Bold"
+}
+
+h3,a {
+  font-family: "Centrale Sans Book";
+}
+
+h4, h5, p, span {
+  font-family: "Centrale Sans Light";
+}

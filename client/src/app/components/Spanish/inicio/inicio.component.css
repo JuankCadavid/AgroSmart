@@ -1,32 +1,30 @@
-.carousel{
+.carousel {
   position: relative;
   max-width: 300px;
   width: 100%;
   display: block;
   align-content: center;
-  background:rgba(1, 1, 1,0.0);
+  background: rgba(1, 1, 1, 0.0);
   border-radius: 15%;
 }
 
-.pi-chevron-right{
+.pi-chevron-right {
   color: black;
 }
 
-.pi-chevron-left{
+.pi-chevron-left {
   color: black;
 }
 
 @media screen and (max-width: 400px) {
-    .col-xl-3 img{
-      width: 100px;
-      height: 100px;
-    }
-    .imageUS{
-      display: none !important;
-    }
-    
-    #ecom,#solutions{
-      display: none !important;
-    }
-
+  .col-xl-3 img {
+    width: 100px;
+    height: 100px;
   }
+  .imageUS {
+    display: none !important;
+  }
+  #ecom, #solutions {
+    display: none !important;
+  }
+}

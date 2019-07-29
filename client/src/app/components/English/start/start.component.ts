@@ -15,29 +15,7 @@ import {MapModule, MapAPILoader, MarkerTypeId, IMapOptions, IBox, IMarkerIconInf
 
 export class StartComponent implements OnInit {
 
-  _markerTypeId = MarkerTypeId;
-  _options: IMapOptions = {
-    disableBirdseye: false,
-    disableStreetside: false,
-    navigationBarMode: 1, 
-    zoom: 16
-  };
   
-  _box: IBox = {
-    maxLatitude: 3,
-    maxLongitude: -74,
-    minLatitude: 3,
-    minLongitude: -80
-  };
-  
-   _iconInfo: IMarkerIconInfo = {
-    markerType: MarkerTypeId.FontMarker,
-    fontName: 'FontAwesome',
-    fontSize: 50,
-    color: 'red',
-    markerOffsetRatio: { x: 0.5, y: 1 },
-    text: '\uF276'    
-  };
 
   constructor() {
 
@@ -49,9 +27,7 @@ export class StartComponent implements OnInit {
 
   }
 
-  _click(){
-    console.log("hello world...");
- }
+
 
   
 }

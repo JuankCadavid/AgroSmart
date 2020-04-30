@@ -25,7 +25,7 @@
     "bingmaps": "^2.0.3",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-charts": "^2.3.0",
     "ngx-scrollreveal": "^3.0.0",
     "primeicons": "^1.0.0",
